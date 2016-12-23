@@ -186,10 +186,18 @@ ola {puts "Eu aqui no meio"}
 ```
 
 
-### 
+### Banco de Dados
 
-```ruby
+`config/database.yml`
 
+### Rake
+
+Ferramenta de gerenciamento de tarefas.
+
+```
+cd appexample
+rake -T
+rake db:create
 ```
 
 
