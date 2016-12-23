@@ -215,7 +215,21 @@ rails generate scaffold customer name:string email:string birthday:date obs:text
 rake db:migrate
 ```
 
+### Views, Embedded Ruby
 
+Em `views/customers/index.html.erb`
+
+```ruby
+<% a = "Rails" %>
+
+texto A --- <%= a -%>
+```
+
+### Textos interpolados com variáveis
+
+```ruby
+<%= "teste #{a} on #{b} teste" %>
+```
 
 ### 
 
@@ -223,7 +237,11 @@ rake db:migrate
 
 ```
 
+### 
 
+```ruby
+
+```
 
 ### 
 
