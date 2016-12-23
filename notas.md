@@ -113,27 +113,76 @@ end
 ### Classes
 
 ```ruby
+a = 123
+a.class
+nome = 'Texto'
+a.class
+```
 
+```ruby
+class Pessoa
+  def falar
+    puts "Oi"
+  end
+end
+
+pessoa = Pessoa.new
+pessoa.falar
+pessoa.class
+```
+
+```ruby
+cd appexample/tmp
+irb
+require_relative "pessoa"
+pessoa = Pessoa.new
+pessoa.falar
+```
+
+```ruby
+irb
+require_relative "atleta"
+atleta = Atleta.new
+atleta.class
+atleta.correr
+atleta.falar
 ```
 
 ### Módulos
 
-```ruby
+Um módulo é uma coleção de métodos e constantes.
 
+```ruby
+cd appexample/tmp
+irb
+require_relative "meu_modulo"
+Configuracoes::NOME_DO_SISTEMA
+include Configuracoes # módulo dentro da classe
 ```
 
 
 ### Mixins
 
 ```ruby
-
+cd appexample/tmp
+irb
+require_relative "meu_mixin"
+mm = MeuMixin.new
+mm.calcular
+mm.enviar_correio
 ```
 
 
 ### Yield
 
 ```ruby
+def ola
+  puts "Ola"
+  yield
+  puts "Oi"
+end
 
+ola {puts "Eu aqui no meio"}
 ```
 
 
