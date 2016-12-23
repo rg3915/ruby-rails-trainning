@@ -231,16 +231,21 @@ texto A --- <%= a -%>
 <%= "teste #{a} on #{b} teste" %>
 ```
 
-### 
-
-```ruby
+### Rails Console
 
 ```
+rails console # ou rails c
+a = Customer.first
+a.name
+b = Customer.all
+```
 
-### 
+### Variáveis de Instância
+
+`controllers/customers_controller.rb`
 
 ```ruby
-
+@customers = ...
 ```
 
 ### 
