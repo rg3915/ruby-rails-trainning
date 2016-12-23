@@ -200,12 +200,13 @@ rake -T
 rake db:create
 ```
 
+### Rails
 
+**Convention over configuration** e **Scaffold**
 
-### 
-
-```ruby
-
+```
+cd appexample
+rails generate scaffold customer name:string email:string birthday:date obs:text
 ```
 
 
