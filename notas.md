@@ -209,12 +209,10 @@ cd appexample
 rails generate scaffold customer name:string email:string birthday:date obs:text
 ```
 
+### Migrations
 
-
-### 
-
-```ruby
-
+```
+rake db:migrate
 ```
 
 
