@@ -288,22 +288,26 @@ end
 <%= link_to "Cadastro de Clientes", customers_path %>
 ```
 
-### 
+### Symbols x Strings
 
-```ruby
-
+`:texto` e `"texto"`.
 ```
 
-### 
+### Active Record
 
 ```ruby
-
-```
-
-### 
-
-```ruby
-
+rails console
+x = Customer.all
+x = Customer.last
+y = Customer.where(:id => 1) #ou
+y = Customer.where(id: 1)
+z = Customer.create(name: "Maria", email: "maria@example.com", birthday: Date.today, obs: "Lorem ipsum...")
+w = Customer.new
+w.name = "Joaquim"
+w.email = "joaquim@example.com"
+w.birthday = Date.today
+w.obs = "Lorem ipsum..."
+w.save
 ```
 
 ### 
