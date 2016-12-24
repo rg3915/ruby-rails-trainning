@@ -310,21 +310,46 @@ w.obs = "Lorem ipsum..."
 w.save
 ```
 
-### 
+### Controllers
 
 ```ruby
 
 ```
 
-### 
+### Filtros
+
+before_action x before_filter
+
+
+### Partials
+
+`_sua_partial.html.erb`
 
 ```ruby
-
+<%= render 'form' %>
 ```
 
 ### 
 
 ```ruby
+code here
+```
 
+### 
+
+```ruby
+code here
+```
+
+### 
+
+```ruby
+code here
+```
+
+### 
+
+```ruby
+code here
 ```
 
