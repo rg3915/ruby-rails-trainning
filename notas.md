@@ -248,6 +248,76 @@ b = Customer.all
 @customers = ...
 ```
 
+### Rotas
+
+`config/routers.rb`
+
+```bash
+rails g controller welcome
+```
+
+```ruby
+Rails.application.routes.draw do
+  root 'welcome#index'
+
+  resources :customers
+
+  get 'inicio' => 'welcome#index'
+end
+```
+
+### Controllers
+
+`controllers/welcome-controller.rb`
+
+```ruby
+class WelcomeController < ApplicationController
+  def index
+    @teste = "Curso de Rails"
+  end
+end
+```
+
+### Helpers
+
+`views/welcome/index.html.erb`
+
+```html
+<h1>Teste de página INDEX na WELCOME CONTROLLER!</h1>
+<h3><%= @teste %></h3>
+<%= link_to "Cadastro de Clientes", customers_path %>
+```
+
+### 
+
+```ruby
+
+```
+
+### 
+
+```ruby
+
+```
+
+### 
+
+```ruby
+
+```
+
+### 
+
+```ruby
+
+```
+
+### 
+
+```ruby
+
+```
+
 ### 
 
 ```ruby
