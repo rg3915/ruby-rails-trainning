@@ -312,10 +312,6 @@ w.save
 
 ### Controllers
 
-```ruby
-
-```
-
 ### Filtros
 
 before_action x before_filter
@@ -329,27 +325,25 @@ before_action x before_filter
 <%= render 'form' %>
 ```
 
-### 
+### Helpers
+
+`form_for`, `f.label`, `f.text_field`, `f.submit`
+
+### Params
 
 ```ruby
-code here
+@parametros = params
 ```
 
 ### 
 
 ```ruby
-code here
+
 ```
 
 ### 
 
 ```ruby
-code here
-```
 
-### 
-
-```ruby
-code here
 ```
 
