@@ -384,19 +384,47 @@ rails g bootstrap:layout application fluid
 rails g bootstrap:themed Customers
 ```
 
-### 
+## Criando uma aplicação
 
-```ruby
+**App:** Agenda
+
+```bash
+rails new remember
+rails g scaffold Annotation body:text
+rails g scaffold Friend name:string address:string email:string phone:string
+rails db:migrate
+```
+
+http://localhost:3000/rails/info/routers
+
+```bash
+rails g controller welcome index
+```
+
+```bash
+bundle install
+rails generate bootstrap:install less
+rails generate bootstrap:install static
+rails g bootstrap:layout application fluid
+rails g bootstrap:themed Annotations
+rails g bootstrap:themed Friends
+```
+
+
+### i18n
+
+Estando na pasta `remember` digite
+
+```bash
+wget -O config/locales/pt-br_rails.yml https://raw.githubusercontent.com/svenfuchs/rails-i18n/master/rails/locale/pt-BR.yml
 
 ```
 
-### 
+### Pagination
 
-```ruby
+https://github.com/mislav/will_paginate
 
-```
-
-### 
+https://github.com/amatsuda/kaminari
 
 ```ruby
 
