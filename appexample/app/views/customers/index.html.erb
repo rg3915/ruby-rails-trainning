@@ -25,7 +25,7 @@
       <tr>
         <td><%= customer.name %></td>
         <td><%= customer.email %></td>
-        <td><%= customer.birthday %></td>
+        <td><%= l(customer.birthday) %></td>
         <td><%= customer.obs %></td>
         <td><%= link_to 'Show', customer %></td>
         <td><%= link_to 'Edit', edit_customer_path(customer) %></td>

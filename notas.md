@@ -335,11 +335,38 @@ before_action x before_filter
 @parametros = params
 ```
 
-### 
+### i18n
+
+`config/application.rb`
 
 ```ruby
+module Appexample
+  class Application < Rails::Application
+    config.i18n.default_locale = "pt-BR"
+  end
+end
 
 ```
+
+```bash
+touch config/locales/pt-br.yml
+```
+
+```ruby
+"pt-BR":
+  hello: "Olá Mundo"
+```
+
+```
+i18n.t # traduz
+i18n.l # localiza data
+```
+
+https://github.com/svenfuchs/rails-i18n
+
+https://github.com/svenfuchs/rails-i18n/blob/master/rails/locale/pt-BR.yml
+
+Renomeei para `pt-br_rails.yml`
 
 ### 
 
