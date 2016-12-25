@@ -368,6 +368,40 @@ https://github.com/svenfuchs/rails-i18n/blob/master/rails/locale/pt-BR.yml
 
 Renomeei para `pt-br_rails.yml`
 
+### Bootstrap Rails
+
+https://github.com/seyhunak/twitter-bootstrap-rails
+
+```ruby
+# Gemfile
+gem "twitter-bootstrap-rails"
+```
+
+```bash
+bundle install
+rails generate bootstrap:install static
+rails g bootstrap:layout application fluid
+rails g bootstrap:themed Customers
+```
+
+### 
+
+```ruby
+
+```
+
+### 
+
+```ruby
+
+```
+
+### 
+
+```ruby
+
+```
+
 ### 
 
 ```ruby
